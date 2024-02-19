@@ -10,5 +10,8 @@
   },
   "dependencies": {
     "docusaurus": "^1.14.6"
-  }
+  },
+  "engines": {
+  "node": ">=20.0.0"
+}
 }
