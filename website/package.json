@@ -9,7 +9,10 @@
     "rename-version": "docusaurus-rename-version"
   },
   "dependencies": {
-    "docusaurus": "^1.14.6"
+    "docusaurus": "^1.14.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "5.0.1"
   },
   "engines": {
   "node": ">=20.0.0"
