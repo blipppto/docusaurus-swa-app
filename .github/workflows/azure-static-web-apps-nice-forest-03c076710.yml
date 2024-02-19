@@ -19,7 +19,7 @@ jobs:
         with:
           submodules: true
           lfs: false
-      - run: sudo apt install nodejs && npm install
+      - run: apt-get install nodejs && npm install
       - run: npm config set legacy-peer-deps true
       - name: Build And Deploy
         id: builddeploy
