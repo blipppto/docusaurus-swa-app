@@ -12,15 +12,14 @@ on:
 jobs:
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
-   # runs-on: ubuntu-latest 
-    runs-on: node:latest
+    runs-on: ubuntu-latest 
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v3
         with:
           submodules: true
           lfs: false
-      - run: npm install
+      - run: sudo apt install nodejs && npm install
       - run: npm config set legacy-peer-deps true
       - name: Build And Deploy
         id: builddeploy
